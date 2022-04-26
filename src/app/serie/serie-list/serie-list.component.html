@@ -1,0 +1,26 @@
+<table class="table table-light">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Channel</th>
+      <th>Seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let s of series">
+      <th scope="row">{{ s.id }}</th>
+      <td>
+        <a href="">{{ s.name }}</a>
+      </td>
+      <td>
+        <dd>{{ s.channel }}</dd>
+      </td>
+      <td>
+        <dd>{{ s.seasons }}</dd>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Seasons average: {{ seasonsAvg }}</p>
